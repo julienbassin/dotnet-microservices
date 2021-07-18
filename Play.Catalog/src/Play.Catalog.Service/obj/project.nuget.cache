@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tSFiKkYguCn5bv40LxwW7C+mnBOqmrNOCaXYkDT3FM0Bv7w4Y9EH0uQGdVJ0ttC5dVLNVhMxSuVEafH3EFZeJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\Play.Catalog.service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
