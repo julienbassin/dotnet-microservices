@@ -43,5 +43,22 @@ namespace Play.Catalog.Service.Controllers
             items.Add(item);
             return CreatedAtAction(nameof(GetById), new { item.Id }, item);
         }
+
+        [HttpPut("{Id}")]
+        public IActionResult Update(Guid Id, ItemDto updatedModel)
+        {
+            var existingItem = items.Where(i => i.Id == Id).SingleOrDefault();
+
+            var updatedItem = existingItem with
+            {
+                Name = updatedModel.Name,
+                Description = updatedModel.Description,
+                Price = updatedModel.Price
+            };
+
+            int index = items.FindIndex(existingItem => existingItem.Id == Id);
+            items[index] = updatedItem;
+            return NoContent();
+        }
     }
 }
