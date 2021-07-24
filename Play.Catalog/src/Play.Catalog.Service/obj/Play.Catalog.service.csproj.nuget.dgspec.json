@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\Play.Catalog.service.csproj": {}
+    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\Play.Catalog.service.csproj": {
+    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\Play.Catalog.service.csproj",
+        "projectUniqueName": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
         "projectName": "Play.Catalog.service",
-        "projectPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\Play.Catalog.service.csproj",
+        "projectPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
         "packagesPath": "C:\\Users\\julien.bassin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\Labs\\Play.Catalog\\src\\Play.Catalog.service\\obj\\",
+        "outputPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
