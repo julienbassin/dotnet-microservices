@@ -631,31 +631,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\XOR\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\julien.bassin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
+      "projectUniqueName": "c:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
       "projectName": "Play.Catalog.service",
-      "projectPath": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
-      "packagesPath": "C:\\Users\\XOR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
+      "projectPath": "c:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
+      "packagesPath": "C:\\Users\\julien.bassin\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\XOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\julien.bassin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Labs\\packages\\": {},
-        "C:\\Labs\\packages\\Play.Common.1.0.0.nupkg": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -701,7 +701,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
       }
     }
   }

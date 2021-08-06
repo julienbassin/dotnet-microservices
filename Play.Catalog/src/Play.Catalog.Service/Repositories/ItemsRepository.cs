@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MongoDB.Driver;
@@ -31,17 +32,17 @@ namespace Play.Catalog.Service.Repositories
 
         public async Task CreateAsync(Item entity)
         {
-            if (item == null)
+            if (entity == null)
             {
                 throw new ArgumentNullException(nameof(entity));
             }
 
-            await dbCollection.InsertOne(entity);
+            await dbCollection.InsertOneAsync(entity);
         }
 
         public async Task UpdateAsync(Item entity)
         {
-            if (item == null)
+            if (entity == null)
             {
                 throw new ArgumentNullException(nameof(entity));
             }
