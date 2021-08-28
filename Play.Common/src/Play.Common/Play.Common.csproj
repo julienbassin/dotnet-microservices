@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.extensions.configuration" Version="5.0.0" />
+    <PackageReference Include="microsoft.extensions.configuration.binder" Version="5.0.0" />
+    <PackageReference Include="microsoft.extensions.dependencyInjection" Version="5.0.2" />
+    <PackageReference Include="mongodb.driver" Version="2.13.1" />
+  </ItemGroup>
+
+</Project>
