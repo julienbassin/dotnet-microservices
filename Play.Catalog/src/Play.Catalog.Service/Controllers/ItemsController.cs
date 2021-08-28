@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Play.Catalog.Service.Entites;
 using Play.Catalog.Service.Models.DTOs;
+using Play.Catalog.Service.Repositories.Interfaces;
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -11,59 +13,81 @@ namespace Play.Catalog.Service.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
-        private static readonly List<ItemDto> items = new()
-        {
-            new ItemDto(Guid.NewGuid(), "Potion", "Restores a small amount of HP", 5, DateTimeOffset.UtcNow),
-            new ItemDto(Guid.NewGuid(), "Antidote", "Cures", 7, DateTimeOffset.UtcNow),
-            new ItemDto(Guid.NewGuid(), "Bronze sword", "Deals a small amount of damage", 20, DateTimeOffset.UtcNow)
-        };
+        private readonly IItemsRepository _itemsRepo;
 
-        [HttpGet()]
-        public IEnumerable<ItemDto> Get()
+        public ItemsController(IItemsRepository itemsRepo)
         {
+            _itemsRepo = itemsRepo;
+        }
+        [HttpGet()]
+        public async Task<IEnumerable<ItemDto>> GetAsync()
+        {
+            var items = (await _itemsRepo.GetAllAsync()).Select(item => item.AsDto());
             return items;
         }
 
         [HttpGet("{Id}")]
-        public ActionResult<ItemDto> GetById(Guid Id)
+        public async Task<ActionResult<ItemDto>> GetByIdAsync(Guid Id)
         {
-            var item = items.Where(item => item.Id == Id).SingleOrDefault();
+            var item = await _itemsRepo.GetAsync(Id);
 
             if (item == null)
             {
                 return NotFound();
             }
 
-            return item;
+            return item.AsDto();
         }
 
         [HttpPost]
-        public ActionResult<ItemDto> Create(ItemDto model)
+        public async Task<ActionResult<ItemDto>> PostAsync(CreatedItemDto model)
         {
             if (model == null)
             {
                 throw new ArgumentNullException();
             }
 
-            var item = new ItemDto(Guid.NewGuid(), model.Name, model.Description, model.Price, DateTimeOffset.UtcNow);
-            items.Add(item);
-            return CreatedAtAction(nameof(GetById), new { item.Id }, item);
+            var item = new Item
+            {
+                Name = model.Name,
+                Description = model.Description,
+                Price = model.Price,
+                CreatedDate = DateTimeOffset.UtcNow
+
+            };
+
+            await _itemsRepo.CreateAsync(item);
+            return CreatedAtAction(nameof(GetByIdAsync), new { item.Id }, item);
         }
 
         [HttpPut("{Id}")]
-        public IActionResult Update(Guid Id, ItemDto updatedModel)
+        public async Task<IActionResult> PutAsync(Guid Id, ItemDto updatedModel)
         {
-            var existingItem = items.Where(i => i.Id == Id).SingleOrDefault();
+            var existingItem = await _itemsRepo.GetAsync(Id);
 
-            var updatedItem = existingItem with
+            if (existingItem == null)
             {
-                Name = updatedModel.Name,
-                Description = updatedModel.Description,
-                Price = updatedModel.Price
-            };
+                return NotFound();
+            }
 
-            int index = items.FindIndex(existingItem => existingItem.Id == Id);
-            items[index] = updatedItem;
+            existingItem.Name = updatedModel.Name;
+            existingItem.Description = updatedModel.Description;
+            existingItem.Price = updatedModel.Price;
+
+            await _itemsRepo.UpdateAsync(existingItem);
+            return NoContent();
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAsync(Guid Id)
+        {
+            var existingItem = await _itemsRepo.GetAsync(Id);
+            if (existingItem == null)
+            {
+                return NotFound();
+            }
+
+            await _itemsRepo.RemoveAsync(existingItem.Id);
             return NoContent();
         }
     }
