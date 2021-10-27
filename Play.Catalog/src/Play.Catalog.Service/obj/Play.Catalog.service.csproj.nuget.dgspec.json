@@ -1,31 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {}
+    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {
+    "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
+        "projectUniqueName": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
         "projectName": "Play.Catalog.service",
-        "projectPath": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
-        "packagesPath": "C:\\Users\\XOR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XOR\\Documents\\Openclassrooms\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
+        "projectPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
+        "packagesPath": "C:\\Users\\julien.bassin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\XOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\julien.bassin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Labs\\packages\\": {},
-          "C:\\Labs\\packages\\Play.Common.1.0.0.nupkg": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\packages": {},
+          "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,9 +46,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MongoDB.Driver": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[2.13.0, )"
+              "version": "[5.0.1, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.1, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Play.Common": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -71,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     }
