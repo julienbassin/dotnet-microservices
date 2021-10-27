@@ -1,5 +1,5 @@
-using Play.Catalog.Service.Entites;
-using Play.Catalog.Service.Models.DTOs;
+using Play.Catalog.Service.Dtos;
+using Play.Catalog.Service.Entities;
 
 namespace Play.Catalog.Service
 {
