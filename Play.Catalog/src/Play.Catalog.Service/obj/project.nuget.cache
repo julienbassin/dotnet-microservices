@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "opMRL62j87ZT1WQwmetVbsTiJO96ouKgVWmwMpWKmQKP9LZd12OuyPbNwSZAtPPTPLH5iKAQJnq5TPKlSDbO0A==",
+  "dgSpecHash": "A9OIGdbByKAv9+aeHTOIB/h6BFC1W1n2GxunxvqLf+ZT6nYK5LL+kMh8BwzMPjlxya/oSUVU/pRpEhFmkkOyZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.service.csproj",
+  "projectFilePath": "C:\\Users\\julien.bassin\\OneDrive - Avanade\\Documents\\dotnet-microservices\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julien.bassin\\.nuget\\packages\\automatonymous\\5.1.1\\automatonymous.5.1.1.nupkg.sha512",
     "C:\\Users\\julien.bassin\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
